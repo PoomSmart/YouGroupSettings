@@ -1,0 +1,11 @@
+Package: com.ps.yougroupsettings
+Name: YouGroupSettings
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Allow tweak-made settings to be grouped and displayed in iOS YouTube app.
+Maintainer: PoomSmart
+Author: PoomSmart
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
+Depiction: https://poomsmart.github.io/repo/depictions/yougroupsettings.html
+SileoDepiction: https://poomsmart.github.io/repo/sileodepictions/yougroupsettings.json
