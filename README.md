@@ -24,8 +24,9 @@ If `nil` is provided to the `icon` argument of the setting-adding method `-[YTSe
 You can override this icon by supplying a `YTIIcon` instance with a different icon type to the `icon` argument of the method above in youe tweak code. For example:
 
 ```objc
+YTSettingsViewController *settingsViewController = ...;
 YTIIcon *icon = [%c(YTIIcon) new];
 icon.iconType = <type as number>;
 
-[YTSettingsViewController setSectionItems:items forCategory:category title:title icon:icon titleDescription:titleDescription headerHidden:headerHidden];
+[settingsViewController setSectionItems:items forCategory:category title:title icon:icon titleDescription:titleDescription headerHidden:headerHidden];
 ```
