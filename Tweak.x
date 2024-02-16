@@ -50,6 +50,7 @@ NSBundle *TweakBundle() {
             @(200), // YouPiP
             @(2168), // YTHoldForSpeed
             @(1222), // YTVideoOverlay
+            @(500), // uYou+
         ]];
     });
     return tweaks;
