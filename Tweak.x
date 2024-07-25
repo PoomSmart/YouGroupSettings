@@ -9,6 +9,7 @@
 @end
 
 static const NSUInteger GROUP_TYPE = 'psyt';
+static const NSInteger YouChooseQuality = 'ycql';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -50,7 +51,8 @@ NSBundle *TweakBundle() {
             @(200), // YouPiP
             @(2168), // YTHoldForSpeed
             @(1222), // YTVideoOverlay
-            @(500), // uYou+
+            @(500), // uYou+,
+            @(YouChooseQuality),
         ]];
     });
     return tweaks;
