@@ -9,6 +9,7 @@
 @end
 
 static const NSUInteger GROUP_TYPE = 'psyt';
+static const NSInteger YTIcons = 'ytic';
 static const NSInteger YouChooseQuality = 'ycql';
 
 NSBundle *TweakBundle() {
@@ -45,6 +46,7 @@ NSBundle *TweakBundle() {
     dispatch_once(&onceToken, ^{
         tweaks = [NSMutableArray new];
         [tweaks addObjectsFromArray:@[
+            @(YTIcons), // YTIcons
             @(404), // YTABConfig
             @(517), // DontEatMyContent
             @(1080), // Return YouTube Dislike
@@ -79,7 +81,7 @@ NSBundle *TweakBundle() {
 - (void)setSectionItems:(NSMutableArray *)sectionItems forCategory:(NSInteger)category title:(NSString *)title icon:(YTIIcon *)icon titleDescription:(NSString *)titleDescription headerHidden:(BOOL)headerHidden {
     if (icon == nil && [[%c(YTSettingsGroupData) tweaks] containsObject:@(category)]) {
         icon = [%c(YTIIcon) new];
-        icon.iconType = 44;
+        icon.iconType = YT_SETTINGS;
     }
     %orig;
 }
