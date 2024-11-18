@@ -6,6 +6,4 @@ Description: Allow tweak-made settings to be grouped and displayed in iOS YouTub
 Maintainer: PoomSmart
 Author: PoomSmart
 Section: Tweaks
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 14.0)
-Depiction: https://poomsmart.github.io/repo/depictions/yougroupsettings.html
-SileoDepiction: https://poomsmart.github.io/repo/sileodepictions/yougroupsettings.json
+Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 11.0)

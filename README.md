@@ -8,10 +8,13 @@ Currently, this tweak will group the following YouTube tweaks into a dedicated g
 
 - DontEatMyContent
 - Return YouTube Dislike
+- YouChooseQuality
 - YouPiP
 - YTABConfig
 - YTHoldForSpeed
+- YTIcons
 - YTVideoOverlay
+- uYou+
 
 ### Adding Support for a Tweak
 
@@ -21,7 +24,7 @@ Alternatively, you can create an entirely new group of settings by basically cop
 
 ## Setting Icons
 
-If `nil` is provided to the `icon` argument of the setting-adding method `-[YTSettingsViewController setSectionItems:forCategory:title:icon:titleDescription:headerHidden:]` from a tweak that is supported above, the default instance of `YTIIcon` with `iconType` of `44` will be used. This icon is an outline setting gear.
+If `nil` is provided to the `icon` argument of the setting-adding method `-[YTSettingsViewController setSectionItems:forCategory:title:icon:titleDescription:headerHidden:]` from a tweak that is supported above, the default instance of `YTIIcon` with `iconType` of `YT_SETTINGS` (`44`) will be used. This icon is an outline setting gear.
 
 You can override this icon by supplying a `YTIIcon` instance with a different icon type to the `icon` argument of the method above in your tweak code. For example:
 

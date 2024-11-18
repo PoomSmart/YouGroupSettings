@@ -8,7 +8,7 @@
 + (NSMutableArray <NSNumber *> *)tweaks;
 @end
 
-static const NSUInteger GROUP_TYPE = 'psyt';
+static const NSInteger TweakGroup = 'psyt';
 static const NSInteger YTIcons = 'ytic';
 static const NSInteger YouChooseQuality = 'ycql';
 
@@ -30,7 +30,7 @@ NSBundle *TweakBundle() {
 + (NSArray <YTSettingsGroupData *> *)orderedGroups {
     NSArray <YTSettingsGroupData *> *groups = %orig;
     NSMutableArray <YTSettingsGroupData *> *mutableGroups = [groups mutableCopy];
-    YTSettingsGroupData *tweakGroup = [[%c(YTSettingsGroupData) alloc] initWithGroupType:GROUP_TYPE];
+    YTSettingsGroupData *tweakGroup = [[%c(YTSettingsGroupData) alloc] initWithGroupType:TweakGroup];
     [mutableGroups insertObject:tweakGroup atIndex:0];
     return mutableGroups;
 }
@@ -46,22 +46,22 @@ NSBundle *TweakBundle() {
     dispatch_once(&onceToken, ^{
         tweaks = [NSMutableArray new];
         [tweaks addObjectsFromArray:@[
-            @(YTIcons), // YTIcons
             @(404), // YTABConfig
+            @(YTIcons), // YTIcons
+            @(500), // uYou+,
             @(517), // DontEatMyContent
             @(1080), // Return YouTube Dislike
+            @(YouChooseQuality),
             @(200), // YouPiP
             @(2168), // YTHoldForSpeed
             @(1222), // YTVideoOverlay
-            @(500), // uYou+,
-            @(YouChooseQuality),
         ]];
     });
     return tweaks;
 }
 
 - (NSString *)titleForSettingGroupType:(NSUInteger)type {
-    if (type == GROUP_TYPE) {
+    if (type == TweakGroup) {
         NSBundle *tweakBundle = TweakBundle();
         return LOC(@"TWEAKS");
     }
@@ -69,7 +69,7 @@ NSBundle *TweakBundle() {
 }
 
 - (NSArray <NSNumber *> *)orderedCategoriesForGroupType:(NSUInteger)type {
-    if (type == GROUP_TYPE)
+    if (type == TweakGroup)
         return [[self class] tweaks];
     return %orig;
 }
