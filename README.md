@@ -1,6 +1,6 @@
 # YouGroupSettings
 
-A YouTube iOS tweak to allow custom settings (made by tweaks) to be displayed when the grouped settings experiment is active (`YTColdConfig.mainAppCoreClientEnableCairoSettings`). This supports YouTube version 19.03.2 and higher (iOS 14.0+).
+A YouTube iOS tweak to allow custom settings (made by tweaks) to be displayed when the grouped settings experiment is active (`YTColdConfig.mainAppCoreClientEnableCairoSettings`), without any extra configurations. This supports YouTube version 19.03.2 and higher (iOS 14.0+).
 
 ## Supported Tweaks
 
