@@ -1,6 +1,6 @@
 #import <YouTubeHeader/YTIIcon.h>
 #import <YouTubeHeader/YTSettingsGroupData.h>
-#import <rootless.h>
+#import <PSHeader/Misc.h>
 
 #define LOC(x) [tweakBundle localizedStringForKey:x value:nil table:nil]
 
@@ -17,10 +17,11 @@ NSBundle *TweakBundle() {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSString *tweakBundlePath = [[NSBundle mainBundle] pathForResource:@"YouGroupSettings" ofType:@"bundle"];
-        if (tweakBundlePath)
-            bundle = [NSBundle bundleWithPath:tweakBundlePath];
-        else
-            bundle = [NSBundle bundleWithPath:ROOT_PATH_NS(@"/Library/Application Support/YouGroupSettings.bundle")];
+#if TARGET_OS_SIMULATOR
+        bundle = [NSBundle bundleWithPath:tweakBundlePath ?: realPath(@"/Library/Application Support/YouGroupSettings.bundle")];
+#else
+        bundle = [NSBundle bundleWithPath:tweakBundlePath ?: PS_ROOT_PATH_NS(@"/Library/Application Support/YouGroupSettings.bundle")];
+#endif
     });
     return bundle;
 }
