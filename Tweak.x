@@ -17,11 +17,7 @@ NSBundle *TweakBundle() {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSString *tweakBundlePath = [[NSBundle mainBundle] pathForResource:@"YouGroupSettings" ofType:@"bundle"];
-#if TARGET_OS_SIMULATOR
-        bundle = [NSBundle bundleWithPath:tweakBundlePath ?: realPath(@"/Library/Application Support/YouGroupSettings.bundle")];
-#else
         bundle = [NSBundle bundleWithPath:tweakBundlePath ?: PS_ROOT_PATH_NS(@"/Library/Application Support/YouGroupSettings.bundle")];
-#endif
     });
     return bundle;
 }
