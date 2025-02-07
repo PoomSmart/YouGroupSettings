@@ -11,6 +11,7 @@
 static const NSInteger TweakGroup = 'psyt';
 static const NSInteger YTIcons = 'ytic';
 static const NSInteger YouChooseQuality = 'ycql';
+static const NSInteger YouSlider = 'ytsl';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -50,6 +51,7 @@ NSBundle *TweakBundle() {
             @(1080), // Return YouTube Dislike
             @(YouChooseQuality),
             @(200), // YouPiP
+            @(YouSlider),
             @(2168), // YTHoldForSpeed
             @(1222), // YTVideoOverlay
         ]];
