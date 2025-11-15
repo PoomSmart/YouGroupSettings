@@ -8,6 +8,7 @@ Currently, this tweak will group the following YouTube tweaks into a dedicated g
 
 - DontEatMyContent
 - Return YouTube Dislike
+- YTUHD
 - YouChooseQuality
 - YouPiP
 - YTABConfig
