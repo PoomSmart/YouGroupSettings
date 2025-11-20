@@ -48,6 +48,7 @@ NSBundle *TweakBundle() {
             @(404), // YTABConfig
             @(YTIcons), // YTIcons
             @(500), // uYou+,
+            @(2002), // Gonerino
             @(517), // DontEatMyContent
             @(1080), // Return YouTube Dislike
             @(YTUHD),
