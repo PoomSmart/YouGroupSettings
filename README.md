@@ -17,6 +17,7 @@ Currently, this tweak will group the following YouTube tweaks into a dedicated g
 - YTVideoOverlay
 - uYou+
 - Gonerino
+- YTweaks
 
 ### Adding Support for a Tweak
 
