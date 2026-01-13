@@ -13,6 +13,7 @@ static const NSInteger YTIcons = 'ytic';
 static const NSInteger YouChooseQuality = 'ycql';
 static const NSInteger YTUHD = 'ythd';
 static const NSInteger YouSlider = 'ytsl';
+static const NSInteger YTweaks = 'ytwk';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -47,6 +48,7 @@ NSBundle *TweakBundle() {
         [tweaks addObjectsFromArray:@[
             @(404), // YTABConfig
             @(YTIcons), // YTIcons
+            @(YTweaks), // YTweaks
             @(2002), // Gonerino
             @(500), // uYou+,
             @(517), // DontEatMyContent
