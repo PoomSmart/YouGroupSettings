@@ -18,6 +18,7 @@ Currently, this tweak will group the following YouTube tweaks into a dedicated g
 - uYou+
 - Gonerino
 - YTweaks
+- YTFlags
 
 ### Adding Support for a Tweak
 
