@@ -19,6 +19,8 @@ Currently, this tweak will group the following YouTube tweaks into a dedicated g
 - Gonerino
 - YTweaks
 - YTFlags
+- YTLite (YouTube Plus)
+- YTLitePlus
 
 ### Adding Support for a Tweak
 
