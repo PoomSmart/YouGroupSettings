@@ -51,8 +51,8 @@ NSBundle *TweakBundle() {
             @(YTIcons), // YTIcons
             @(YTweaks), // YTweaks
             @(2002), // Gonerino
-            @(788), // YTLite
-            @(789), // YTLitePlus
+            @(789), // YTLite
+            @(788), // YTLitePlus
             @(YTFlags), // YTFlags
             @(500), // uYou+,
             @(517), // DontEatMyContent
