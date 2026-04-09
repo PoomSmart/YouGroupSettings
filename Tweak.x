@@ -15,6 +15,7 @@ static const NSInteger YTUHD = 'ythd';
 static const NSInteger YouSlider = 'ytsl';
 static const NSInteger YTweaks = 'ytwk';
 static const NSInteger YTFlags = 'ytfl';
+static const NSInteger VolumeBoostYT = 'ndyt';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -50,6 +51,7 @@ NSBundle *TweakBundle() {
             @(404), // YTABConfig
             @(YTIcons), // YTIcons
             @(YTweaks), // YTweaks
+            @(VolumeBoostYT), // VolumeBoostYT
             @(2002), // Gonerino
             @(YTFlags), // YTFlags
             @(500), // uYou+,
