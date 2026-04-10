@@ -53,6 +53,8 @@ NSBundle *TweakBundle() {
             @(YTweaks), // YTweaks
             @(VolumeBoostYT), // VolumeBoostYT
             @(2002), // Gonerino
+            @(789), // YTLite
+            @(788), // YTLitePlus
             @(YTFlags), // YTFlags
             @(500), // uYou+,
             @(517), // DontEatMyContent
