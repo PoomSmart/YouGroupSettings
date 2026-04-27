@@ -16,6 +16,7 @@ static const NSInteger YouSlider = 'ytsl';
 static const NSInteger YTweaks = 'ytwk';
 static const NSInteger YTFlags = 'ytfl';
 static const NSInteger VolumeBoostYT = 'ndyt';
+static const NSInteger YouMod = 'ytmo';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -54,6 +55,7 @@ NSBundle *TweakBundle() {
             @(VolumeBoostYT), // VolumeBoostYT
             @(2002), // Gonerino
             @(YTFlags), // YTFlags
+            @(YouMod), // YouMod
             @(500), // uYou+,
             @(517), // DontEatMyContent
             @(1080), // Return YouTube Dislike
