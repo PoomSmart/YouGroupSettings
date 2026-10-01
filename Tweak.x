@@ -17,6 +17,7 @@ static const NSInteger YTweaks = 'ytwk';
 static const NSInteger YTFlags = 'ytfl';
 static const NSInteger VolumeBoostYT = 'ndyt';
 static const NSInteger YouMod = 'ytmo';
+static const NSInteger FLEXHelperForYT = 'fhyt';
 
 NSBundle *TweakBundle() {
     static NSBundle *bundle = nil;
@@ -50,6 +51,7 @@ NSBundle *TweakBundle() {
         tweaks = [NSMutableArray new];
         [tweaks addObjectsFromArray:@[
             @(404), // YTABConfig
+            @(FLEXHelperForYT), // FLEXHelperForYT
             @(YTIcons), // YTIcons
             @(YTweaks), // YTweaks
             @(VolumeBoostYT), // VolumeBoostYT
